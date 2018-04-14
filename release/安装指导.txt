@@ -1,0 +1,9 @@
+这几个文件缺一不可。
+修改IMCAHelper.bat
+@echo off
+E:  程序所在的磁盘
+cd E:\Code\MyProject\IMCAHelper\target\jfx\app  程序所在的文件夹
+start javaw -jar IMCAHelper.jar
+exit
+
+修改之后保存，右键以管理员身份运行。

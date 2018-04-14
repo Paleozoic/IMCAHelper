@@ -1,0 +1,20 @@
+spring:
+    jmx:
+        enabled: false
+
+javafx:
+    title: IMCAHelper
+    stage:
+        resizable: true
+
+logging:
+#    path:
+    file: IMCAHelper.log
+    level:
+        root: error
+        com:
+          maxplus1: info
+
+
+game:
+  file: game.yml

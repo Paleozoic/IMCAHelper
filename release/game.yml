@@ -1,0 +1,7 @@
+--- !com.maxplus1.IMCAHelper.data.bean.GameInfo
+game: !com.maxplus1.IMCAHelper.data.bean.Game
+  ba: -ba 123
+  bh: -bh 212321
+  bi: -bi 1124314324
+  cmd: -11bb
+  gold: "1000"

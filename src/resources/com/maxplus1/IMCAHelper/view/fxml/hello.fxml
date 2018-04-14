@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.maxplus1.IMCAHelper.ctrl.HelloController">
+    <children>
+        <Label fx:id="helloLabel" layoutX="34.0" layoutY="28.0" prefHeight="34.0" prefWidth="394.0" text="变速牙">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <TextField fx:id="goldField" layoutX="126.0" layoutY="82.0" prefHeight="26.0" prefWidth="234.0" />
+        <Label layoutX="37.0" layoutY="81.0" prefHeight="19.0" prefWidth="80.0" text="滚钱数量">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="biField" layoutX="126.0" layoutY="120.0" prefHeight="26.0" prefWidth="234.0" />
+        <Label layoutX="37.0" layoutY="119.0" prefHeight="19.0" prefWidth="80.0" text="禁止装备">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="bhField" layoutX="126.0" layoutY="154.0" prefHeight="26.0" prefWidth="234.0" />
+        <Label layoutX="37.0" layoutY="153.0" prefHeight="19.0" prefWidth="80.0" text="禁止英雄">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="baField" layoutX="127.0" layoutY="188.0" prefHeight="26.0" prefWidth="234.0" />
+        <Label layoutX="38.0" layoutY="187.0" prefHeight="19.0" prefWidth="80.0" text="禁止技能">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="38.0" layoutY="220.0" prefHeight="19.0" prefWidth="80.0" text="游戏模式">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="cmdField" layoutX="127.0" layoutY="224.0" prefHeight="26.0" prefWidth="234.0" />
+        <Button fx:id="saveBtn" layoutX="194.0" layoutY="331.0" mnemonicParsing="false" onAction="#saveGameInfo" prefHeight="34.0" prefWidth="101.0" text="保存">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Button>
+      <TextArea layoutX="369.0" layoutY="53.0" prefHeight="220.0" prefWidth="200.0" text="滚钱：ALT+F8&#10;命令：ALT+F9&#10;=============&#10;0. 依赖于Java8：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#10;1. 管理员运行&#10;    1.1  在程序目录新建IMCAHelper.bat&#10;    1.2  脚本内容如下（替换为你自己的程序绝对路径）：&#10;@echo off&#10;cd E:&#10;cd E:\IMCAHelper\&#10;start javaw -jar IMCAHelper.jar&#10;exit&#10;" />
+    </children>
+</Pane>
