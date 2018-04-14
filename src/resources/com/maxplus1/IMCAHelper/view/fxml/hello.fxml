@@ -48,6 +48,6 @@
                 <Font size="22.0" />
             </font>
         </Button>
-      <TextArea layoutX="369.0" layoutY="53.0" prefHeight="220.0" prefWidth="200.0" text="滚钱：ALT+F8&#10;命令：ALT+F9&#10;=============&#10;0. 依赖于Java8：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#10;1. 管理员运行&#10;    1.1  在程序目录新建IMCAHelper.bat&#10;    1.2  脚本内容如下（替换为你自己的程序绝对路径）：&#10;@echo off&#10;cd E:&#10;cd E:\IMCAHelper\&#10;start javaw -jar IMCAHelper.jar&#10;exit&#10;" />
+      <TextArea layoutX="369.0" layoutY="53.0" prefHeight="220.0" prefWidth="200.0" text="滚钱：ALT+F8&#10;命令：ALT+F9&#10;=============&#10;0. 依赖于Java8：http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#10;1. 输入命令需要英文输入法&#10;2. 管理员运行&#10;    2.1  在程序目录新建IMCAHelper.bat&#10;    2.2  脚本内容如下（替换为你自己的程序绝对路径）：&#10;@echo off&#10;cd E:&#10;cd E:\IMCAHelper\&#10;start javaw -jar IMCAHelper.jar&#10;exit" />
     </children>
 </Pane>

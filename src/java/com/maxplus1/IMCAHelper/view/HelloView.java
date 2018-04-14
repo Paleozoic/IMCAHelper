@@ -64,9 +64,10 @@ public class HelloView extends AbstractFxmlView {
         JIntellitype.getInstance().registerHotKey(Const.PAY_GOLD, JIntellitype.MOD_ALT, KeyEvent.VK_F8);
         JIntellitype.getInstance().registerHotKey(Const.PRINT_CMD, JIntellitype.MOD_ALT, KeyEvent.VK_F9);
 
-        Game game = gameInfoService.getGameInfo();
+
         //第二步：添加热键监听器
         JIntellitype.getInstance().addHotKeyListener(markCode -> {
+            Game game = gameInfoService.getGameInfo();
             Robot robot = RobotInstance.INSTANCE.robot;
             switch (markCode) {
                 case Const.PAY_GOLD:
@@ -80,8 +81,8 @@ public class HelloView extends AbstractFxmlView {
                     break;
                 case Const.PRINT_CMD:
                     log.info("===================cmd start================");
-                    // 开启大写锁定
-                    capsLock(robot);
+                    // TODO 开启大写锁定 方法Toolkit.getDefaultToolkit().getLockingKeyState不能正确获得按键状态，所以无效
+//                    capsLock(robot);
                     // 快捷键暂停游戏，并且唤出聊天框
                     click(robot,KeyEvent.VK_F10);
                     click(robot,KeyEvent.VK_M);
@@ -137,7 +138,8 @@ public class HelloView extends AbstractFxmlView {
 
     private void capsLock(Robot robot){
         if(!isCapsLock()){
-            click(robot,KeyEvent.VK_CAPS_LOCK);
+//            click(robot,KeyEvent.VK_CAPS_LOCK);
+            Toolkit.getDefaultToolkit().setLockingKeyState(KeyEvent.VK_CAPS_LOCK,true);
         }
     }
 
